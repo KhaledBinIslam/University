@@ -17,8 +17,8 @@
             
             <nav>
                 <a href="index.html"><img src="images/logo.png"></a>
-                <div class="nav-links">  
-                    <i class="fa fa-times-circle"></i>
+                <div class="nav-links" id="navLinks">  
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -27,10 +27,10 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-caret-square-o-down"></i>
+                <i class="fa fa-caret-square-o-down"onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
-                <h1>Worl's Biggest University</h1>
+                <h1>World's Biggest University</h1>
                 <P>Making a Website is now of the easiest thing in the Worl,<br> you just need to learn html,CSS,Javascipt and you are good to go.
                 </P>
                 <a href="" class="hero-btn">Visit Us To Know More</a>
@@ -38,5 +38,59 @@
 
         </section>
 
+        <!--- course -->
+
+        <section class="course">
+            <h1>Courses We offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eduford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eduford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world.</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eduford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world.</p>
+            </div>
+            
+            </div>
+
+        </section>
+
+        <!---- campus -->
+        <section class="campus">
+            <h1>Our Global campus</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">;
+                
+            </div>
+            
+            </div>
+
+
+
+
+
+
+        <!-----javascript for toggle menu-->
+        <script>
+            var navlinks = document.getElementById("navLinks")
+            function showMenu(){
+            navLinks.style.right = "0";
+            }
+            function hideMenu(){
+            navLinks.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
